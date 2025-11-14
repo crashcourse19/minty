@@ -1,14 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>Minty </title>
+  <link rel="stylesheet" href="/css/style.css"></link>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <div class="container" id="animationScreen">
+    <h1 id="welcome" class="fade">Welcome to</h1>
+    <h1 id="minty" class="fade">Minty</h1>
+
+    <div id="questionBox" class="fade">
+      <p>Have you been here before?</p>
+      <button id="yesButton">Yes</button>
+      <button id="noButton">No</button>
+    </div>
+  </div>
+
+  <div id="mainContent">
+    <div class="search-container">
+      <img src="/assets/logo/logo.png" width="250" height="250">
+      <br>
+      <br>
+      <input type="text" placeholder="Search the web" id="searchBox">
+    </div>
+  </div>
+  <script src="/javascript/main.js"></script>
 </body>
 </html>

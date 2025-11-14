@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(200, 200, 200);
+  font-family: "Carme", sans-serif; 
+}
+
+.container {
+  text-align: center;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease;
+  visibility: hidden;
+}
+
+.fade.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+#minty {
+  color: #4caf50;
+  font-size: 60px;
+}
+
+#welcome {
+  font-size: 40px;
+}
+
+#questionBox {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  /* visibility and opacity removed — handled by .fade */
+  background: white;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: white;
+  color: #4caf50;
+  border: 2px solid  #333;
+}
+
+#mainContent {
+  display: none;
+  font-size: 24px;
+}
