@@ -13,3 +13,10 @@ body {
 .container {
   text-align: center;
 }
+
+input [type="text"]{
+  width: 800px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
